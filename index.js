@@ -19,7 +19,7 @@ mongodb.MongoClient.connect(uri,function(err,db){
 			process.exit(1)
 			}
 		console.log('found docs')
-		docs.ForEach(function(doc){
+		docs.forEach(function(doc){
         		console.log(JSON.stringify(doc))
 		});
 		process.exit(0);
